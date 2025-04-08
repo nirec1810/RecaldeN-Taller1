@@ -8,7 +8,19 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Views\Equipo\" />
+    <None Include="wwwroot\Imagenes\Logo.png" />
+    <None Include="wwwroot\Imagenes\Primera.jpg" />
+    <None Include="wwwroot\Imagenes\Segunda.png" />
+    <None Include="wwwroot\Imagenes\Tercera.jpg" />
+  </ItemGroup>
+
+	<ItemGroup>
+		<Folder Include="Views\Equipo\" />
+	</ItemGroup>
+
+	
+	<ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.7" />
   </ItemGroup>
 
 </Project>

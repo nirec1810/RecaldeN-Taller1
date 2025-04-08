@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
+using RecaldeN_Taller1.Models;
 
 namespace RecaldeN_Taller1.Models
 {
