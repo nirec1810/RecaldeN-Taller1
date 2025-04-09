@@ -1,9 +1,18 @@
-﻿using RecaldeN_Taller1.Models;
+﻿using Microsoft.AspNetCore.Mvc;
+using RecaldeN_Taller1.Models;
 
 namespace RecaldeN_Taller1.Repositories
 {
     public class EquipoRepository
     {
+        public IEnumerable<Equipo> Equipos;
+
+        public EquipoRepository()
+        {
+            Equipos = DevuelveListaRepositories();
+        }
+
+
         public IEnumerable<Equipo> DevuelveListaRepositories()
         {
             List<Equipo> equipos = new List<Equipo>();
@@ -17,7 +26,16 @@ namespace RecaldeN_Taller1.Repositories
             return listado;
         }
         
+        public Equipo DevuelveEquipoPorID(int Id)
+        {
+            var equipo = Equipos.First(item => item.Id == Id);
+            return equipo;
+        }        
 
-        
+        public bool ActualizarEquipo(Equipo equipo)
+        {
+            //Logica de actualizacion
+            return true; 
+        }
     }
 }

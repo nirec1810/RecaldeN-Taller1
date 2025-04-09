@@ -55,8 +55,8 @@
                 @Html.DisplayFor(modelItem => item.PartidosEmpatados)
             </td>
             <td>
-                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Editar", "Edit", new { id=item.Id }, new { @class="btn btn-light"}) |
+                @Html.ActionLink("Ver información Equipo", "Details", new { id = item.Nombre }, new { @class = "btn btn-info" }) |
                 @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
             </td>
         </tr>
