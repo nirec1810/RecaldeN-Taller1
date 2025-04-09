@@ -1,5 +1,6 @@
 html {
   font-size: 14px;
+  
 }
 
 @media (min-width: 768px) {
@@ -18,5 +19,30 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+    background-color: #232629;
+}
+
+h1, h2, h3 {
+    color: white;
+    font-family: 'Times New Roman';
+}
+
+ol {
+    color: white;
+}
+
+p {
+    color: white;
+}
+
+
+tbody, thead, table{
+    color: white;
+}
+
+
+.botones {
+    text-align: center;
+    gap: 70px;
 }
