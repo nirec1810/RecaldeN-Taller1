@@ -1,0 +1,75 @@
+﻿@model RecaldeN_Taller1.Models.Equipo
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+<image src=""></image>
+<div>
+    <h4>Equipo</h4>
+    <hr />
+	<p>
+		<strong>Nombre:</strong> @Model.Nombre
+	</p>
+   <div class="row">
+        <div class="col-md-2">
+            <img src="@Url.Content(Model.Logo)" alt="@Model.Nombre" class="img-fluid" style="max-width: 200px;" />
+        </div>
+        <div class="col-md-8">
+            <h4 style="text-align: justify;">@Model.Historia</h4>
+        </div>
+    </div>
+    <br />
+    <h3>Información Relevante</h3>
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Id)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Id)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Nombre)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Nombre)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PartidosJugados)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PartidosJugados)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PartidosGanados)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PartidosGanados)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PartidosPerdidos)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PartidosPerdidos)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PartidosEmpatados)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PartidosEmpatados)
+        </dd>
+         <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NombreEstadio)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NombreEstadio)
+        </dd>
+    </dl>
+</div>
+<br />
+<div>
+    @Html.ActionLink("Editar", "Edit", new { id = Model.Id }, new { @class = "btn btn-light" }) |
+    <a asp-action="List" class="btn btn-info">Volver a la lista</a>
+</div>
+

@@ -14,10 +14,6 @@
     <None Include="wwwroot\Imagenes\Tercera.jpg" />
   </ItemGroup>
 
-	<ItemGroup>
-		<Folder Include="Views\Equipo\" />
-	</ItemGroup>
-
 	
 	<ItemGroup>
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.7" />

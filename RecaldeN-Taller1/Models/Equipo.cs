@@ -20,5 +20,11 @@ namespace RecaldeN_Taller1.Models
         public int PartidosPerdidos { get; set; }
         [Range(0, 100)]
         public int PartidosEmpatados { get; set; }
+        [Range(0, 500)]
+        public string Historia { get; set; }
+        [DisplayName("Logo del equipo")]
+        public string Logo { get; set; }
+        [DisplayName("Nombre del estadio")]
+        public string NombreEstadio { get; set; }
     }
 }

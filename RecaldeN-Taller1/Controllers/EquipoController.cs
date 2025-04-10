@@ -52,6 +52,12 @@ namespace RecaldeN_Taller1.Controllers
                 return View();
             }
         }
+
+        public ActionResult Details(int Id)
+        {
+            var equipo = _repository.DevuelveEquipoPorID(Id);
+            return View(equipo);
+        }
        
     }   
 }   

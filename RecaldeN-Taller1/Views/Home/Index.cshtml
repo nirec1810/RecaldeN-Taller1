@@ -8,18 +8,40 @@
 </div>
 
 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="~/Imagenes/Logo.png" class="d-block w-100" alt="Logo">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
     </div>
-    <div class="carousel-item">
-      <img src="~/Imagenes/Primera.jpg" class="d-block w-100" alt="Primera">
+<div class="carousel-inner">
+    <div class="carousel-item active div_imagen">
+       <img src="~/Imagenes/Logo.png" class="d-block w-100 imagen" alt="Logo">
+       <div class="carousel-caption d-none d-md-block">
+        <h5>Logo</h5>
+        <p id="leyenda">Este logo está siempre ahí, tan firme como las promesas de ella</p>
+      </div>
     </div>
-    <div class="carousel-item">
-      <img src="~/Imagenes/Segunda.png" class="d-block w-100" alt="Segunda">
+    <div class="carousel-item div_imagen">
+      <img src="~/Imagenes/Primera.jpg" class="d-block w-100 imagen" alt="Primera">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Barcelona vs Liga</h5>
+        <p id="leyenda">Un partido tan emocionante como ver la pintura secarse... pero con más gritos</p>
+      </div>
     </div>
-    <div class="carousel-item">
-      <img src="~/Imagenes/Tercera.jpg" class="d-block w-100" alt="Tercera">
+    <div class="carousel-item div_imagen">
+      <img src="~/Imagenes/Segunda.png" class="d-block w-100 imagen" alt="Segunda">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Festejo</h5>
+        <p id="leyenda">Porque no hay nada que motive más que un gol</p>
+      </div>
+    </div>
+    <div class="carousel-item div_imagen">
+      <img src="~/Imagenes/Tercera.jpg" class="d-block w-100 imagen" alt="Tercera">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Arbitros</h5>
+        <p id="leyenda">El 12vo jugador preparandose para entrar</p>
+      </div>
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">

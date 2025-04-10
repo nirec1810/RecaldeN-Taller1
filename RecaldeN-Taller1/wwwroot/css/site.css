@@ -36,3 +36,50 @@ h1, h2, h3 {
     text-align: center;
     gap: 70px;
 }
+
+.carousel-item {
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.div_imagen {
+    height: 700px;
+    overflow: hidden;
+}
+
+.imagen {
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px; 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); 
+}
+
+/* Con ayuda de Chatgpt logre que se viera mejora el caption del carousel, aqui se pueden ver sus correcciones */
+h5 {
+    color: black;
+    font-weight: bold;
+    font-size: larger;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 5px 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    display: block; /* Asegura que esté en su propia línea */
+    width: fit-content; /* Ajusta el fondo al texto */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#leyenda {
+    color: black;
+    font-weight: bold;
+    font-size: larger;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 5px 15px;
+    border-radius: 8px;
+    display: block; /* Igual que arriba */
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
