@@ -27,11 +27,6 @@ namespace RecaldeN_Taller1.Controllers
             return View(equipos);
         }
 
-        public ActionResult Create()
-        {
-            return View();
-        }
-
         public ActionResult Edit(int Id)
         {
             var equipo = _repository.DevuelveEquipoPorID(Id);

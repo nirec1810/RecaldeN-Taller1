@@ -6,15 +6,9 @@
 
 <h1>List</h1>
 
-<p>
-    <a asp-action="Create" class="btn btn-info">Crear Nueva</a>
-</p>
 <table class="table">
     <thead>
         <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Id)
-            </th>
             <th>
                 @Html.DisplayNameFor(model => model.Nombre)
             </th>
@@ -36,9 +30,7 @@
     <tbody>
 @foreach (var item in Model) {
         <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Id)
-            </td>
+        
             <td>
                 @Html.DisplayFor(modelItem => item.Nombre)
             </td>
@@ -63,11 +55,3 @@
 }
     </tbody>
 </table>
-
-<h3>Armar Tabla</h3>
-
-<div class="botones">
-    <button class="btn btn-primary">Mayor/Menor</button>
-    <button class="btn btn-primary">Menor/Mayor</button>
-    <button class="btn btn-primary">ID</button>
-</div>
