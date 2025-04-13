@@ -16,11 +16,6 @@ namespace RecaldeN_Taller1.Controllers
             _repository = new EquipoRepository();
         }
 
-        public ActionResult View()
-        {
-            return View();
-        }
-
         public ActionResult List()
         {
             var equipos = _repository.DevuelveListaRepositories();
@@ -51,6 +46,12 @@ namespace RecaldeN_Taller1.Controllers
         public ActionResult Details(int Id)
         {
             var equipo = _repository.DevuelveEquipoPorID(Id);
+            return View(equipo);
+        }
+
+        public ActionResult Delete(int id)
+        {
+            var equipo = _repository.DevuelveEquipoPorID(id);
             return View(equipo);
         }
        

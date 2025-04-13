@@ -83,3 +83,9 @@ h5 {
     margin-left: auto;
     margin-right: auto;
 }
+
+.datos {
+    width: 70px;
+    background-color: #232629;
+    color: white;
+}
